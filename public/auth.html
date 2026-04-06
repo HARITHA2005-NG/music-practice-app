@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Auth - Music Practice</title>
+    <link rel="stylesheet" href="/public/styles.css">
+  </head>
+  <body>
+    <div class="container auth-container">
+      <h1>Music Practice — Sign up / Log in</h1>
+
+      <div class="tabs">
+        <button id="tabLogin" class="active">Login</button>
+        <button id="tabSignup">Sign up</button>
+      </div>
+
+      <div id="loginBox">
+        <input id="loginEmail" placeholder="Email">
+        <input id="loginPassword" placeholder="Password" type="password">
+        <div><button id="loginSubmit">Log in</button></div>
+        <div id="loginMsg" class="msg"></div>
+      </div>
+
+      <div id="signupBox" style="display:none">
+        <input id="signupEmail" placeholder="Email">
+        <div id="emailStatus" class="msg small"></div>
+        <input id="signupName" placeholder="Your name">
+        <input id="signupPassword" placeholder="Password" type="password">
+        <div id="pwStrength" class="small"></div>
+        <div><button id="signupSubmit">Create account</button></div>
+        <div id="signupMsg" class="msg"></div>
+      </div>
+
+      <p><a href="/">Back to app</a></p>
+    </div>
+    <script src="/public/auth.js"></script>
+  </body>
+</html>
