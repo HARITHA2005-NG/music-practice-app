@@ -11,7 +11,7 @@ const Register = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post('http://localhost:5000/register', formData);
+            const res = await axios.post('https://music-practice-app-osku.onrender.com/register', formData);
             setMessage("Registration Successful! Redirecting to login...");
             setFormData({ username: '', password: '' });
             setTimeout(() => {

@@ -11,7 +11,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post('http://localhost:5000/login', formData);
+            const res = await axios.post('https://music-practice-app-osku.onrender.com/login', formData);
             localStorage.setItem('username', res.data.user.username);
             setMessage(`Success! Welcome back, ${res.data.user.username}`);
             setTimeout(() => navigate('/select-level'), 1000);
